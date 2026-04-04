@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny | Product Designer Portfolio</title>
+  <meta name="description"
+    content="Jenny is an award-winning Product Designer with 10 years of experience crafting exceptional digital experiences. Available for freelance and full-time opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVBAR ═══════════════════════════════════════════ -->
+  <header id="site-header">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-pill">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#services" class="nav-link" id="nav-service">Service</a>
+        <a href="#resume" class="nav-link" id="nav-resume">Resume</a>
+        <a href="#portfolio" class="nav-link" id="nav-project">Project</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 id="hero-heading" class="hero-title">
+            I'm <span class="brand-orange">Shahnawaz,</span><br />
+            Product Designer
+          </h1>
+
+          <!-- Left floating testimonial card -->
+          <div class="hero-float-card hero-float-left">
+            <div class="quote-icon">"</div>
+            <p>Shahnawaz's Exceptional product design ensure our website's success.<br /><strong>Highly
+                Recommended</strong>
+            </p>
+          </div>
+
+
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn active" id="cta-portfolio">
+              Portfolio <span class="arrow">↗</span>
+            </a>
+            <a href="#contact" class="btn" id="cta-hireme">
+              Hire me <span class="arrow">↗</span>
+            </a>
+          </div>
+
+          <!-- Hero center image -->
+          <div class="hero-image-wrap">
+            <div class="hero-orange-circle"></div>
+            <img src="image/sanu.png" alt="shahnawaz – Product Designer" class="hero-person-img" loading="eager" />
+          </div>
+
+          <!-- Right floating badge -->
+          <div class="hero-float-card hero-float-right">
+            <div class="stars">★★★★★</div>
+            <p class="experience-num">10 Years</p>
+            <p class="experience-label">Experience</p>
+          </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">450<span class="stat-plus">+</span></span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">25<span class="stat-plus">+</span></span>
+            <span class="stat-label">Winning Awards</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">4.9<span class="stat-plus">/5</span></span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">10<span class="stat-plus">+</span></span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ TICKER ═══════════════════════════════════════════ -->
+    <div class="ticker-wrap" aria-label="Services ticker">
+      <div class="ticker-inner">
+        <div class="ticker-track">
+          <span>App Design</span><span class="ticker-dot">◆</span>
+          <span>Dashboard</span><span class="ticker-dot">◆</span>
+          <span>Wireframe</span><span class="ticker-dot">◆</span>
+          <span>UX Design</span><span class="ticker-dot">◆</span>
+          <span>Prototyping</span><span class="ticker-dot">◆</span>
+          <span>Branding</span><span class="ticker-dot">◆</span>
+          <span>User Research</span><span class="ticker-dot">◆</span>
+          <span>Visual Design</span><span class="ticker-dot">◆</span>
+          <!-- Duplicate for seamless loop -->
+          <span>App Design</span><span class="ticker-dot">◆</span>
+          <span>Dashboard</span><span class="ticker-dot">◆</span>
+          <span>Wireframe</span><span class="ticker-dot">◆</span>
+          <span>UX Design</span><span class="ticker-dot">◆</span>
+          <span>Prototyping</span><span class="ticker-dot">◆</span>
+          <span>Branding</span><span class="ticker-dot">◆</span>
+          <span>User Research</span><span class="ticker-dot">◆</span>
+          <span>Visual Design</span><span class="ticker-dot">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ SERVICES ═══════════════════════════════════════════ -->
+    <section class="services section-pad" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-label">What I Offer</div>
+        <h2 id="services-heading" class="section-title">My <span class="brand-orange">Services</span></h2>
+        <p class="section-sub">I craft purposeful, beautiful digital experiences from concept to launch. Here's how I
+          can help you.</p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive and visually stunning interfaces that delight users and achieve business goals.</p>
+          </div>
+          <div class="service-card service-card--featured">
+            <div class="service-icon">📱</div>
+            <h3>Mobile App Design</h3>
+            <p>Designing seamless native mobile experiences for iOS and Android that users love to engage with.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Web Design</h3>
+            <p>Building responsive, accessible, and conversion-optimised websites that stand out from the crowd.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔬</div>
+            <h3>User Research</h3>
+            <p>Conducting in-depth user testing and research to uncover insights that drive design decisions.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Prototyping</h3>
+            <p>Rapid high-fidelity prototypes that bring ideas to life and validate concepts before development.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏷️</div>
+            <h3>Brand Identity</h3>
+            <p>Developing cohesive brand systems — logos, typography, colour palettes — that tell your story.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ RESUME / EXPERIENCE ═══════════════════════════════════════════ -->
+    <section class="resume section-pad" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <div class="section-label">My Journey</div>
+        <h2 id="resume-heading" class="section-title">My <span class="brand-orange">Work Experience</span></h2>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <h3 class="timeline-company">Cognizant, Mumbai</h3>
+              <p class="timeline-period">Sep 2016 – July 2020</p>
+            </div>
+            <div class="timeline-dot timeline-dot--orange"></div>
+            <div class="timeline-right">
+              <h4 class="timeline-role">Experience Designer</h4>
+              <p class="timeline-desc">Led the design of enterprise SaaS products, collaborating with cross-functional
+                teams to improve user satisfaction by 38%.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <h3 class="timeline-company">Sugee Pvt Limited, Mumbai</h3>
+              <p class="timeline-period">Sep 2020 – July 2023</p>
+            </div>
+            <div class="timeline-dot timeline-dot--dark"></div>
+            <div class="timeline-right">
+              <h4 class="timeline-role">UI/UX Designer</h4>
+              <p class="timeline-desc">Owned the end-to-end design of a loan management platform serving 50,000+ users,
+                achieving a 4.7-star App Store rating.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <h3 class="timeline-company">Cinetstox, Mumbai</h3>
+              <p class="timeline-period">Sep 2023 – Present</p>
+            </div>
+            <div class="timeline-dot timeline-dot--orange"></div>
+            <div class="timeline-right">
+              <h4 class="timeline-role">Lead UX Designer</h4>
+              <p class="timeline-desc">Defining the design vision and strategy for a next-generation entertainment
+                platform reaching 2M+ users globally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ ABOUT / WHY HIRE ME ═══════════════════════════════════════════ -->
+    <section class="about section-pad" id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <div class="about-image-col">
+          <div class="about-img-frame">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80&auto=format&fit=crop"
+              alt="Jenny – happy and confident" class="about-img" loading="lazy" />
+            <div class="about-img-circle"></div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-label">Get to Know Me</div>
+          <h2 id="about-heading" class="section-title">Why <span class="brand-orange">Hire me?</span></h2>
+          <p class="about-para">I combine deep empathy for users with a sharp eye for aesthetics to produce designs that
+            are as beautiful as they are functional. With 10 years in the industry I've shipped products used by
+            millions of people.</p>
+          <ul class="about-bullets">
+            <li><span class="bullet-check">✓</span> Pixel-perfect Figma & Adobe XD prototypes</li>
+            <li><span class="bullet-check">✓</span> Data-driven design decisions backed by user research</li>
+            <li><span class="bullet-check">✓</span> Fast communication &amp; collaborative workflow</li>
+            <li><span class="bullet-check">✓</span> Fully responsive across all devices &amp; platforms</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-dark" id="hire-me-btn">Hire me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ PORTFOLIO ═══════════════════════════════════════════ -->
+    <section class="portfolio section-pad" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="portfolio-header">
+          <div>
+            <div class="section-label">Selected Work</div>
+            <h2 id="portfolio-heading" class="section-title">
+              Lets have a look at<br />my <span class="brand-orange">Portfolio</span>
+            </h2>
+          </div>
+          <a href="#portfolio" class="btn btn-primary see-all-btn" id="see-all-btn">See All</a>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="portfolio-filters" role="tablist" aria-label="Portfolio categories">
+          <button class="filter-btn filter-btn--active" role="tab" aria-selected="true" data-filter="all"
+            id="filter-all">All</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="landing" id="filter-landing">Landing
+            Page</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="product" id="filter-product">Product
+            Design</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="animation"
+            id="filter-animation">Animation</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="illustration"
+            id="filter-illustration">Illustration</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="guide"
+            id="filter-guide">Guide</button>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="portfolio-grid" id="portfolio-grid">
+
+          <article class="project-card" data-category="product" id="project-lirante">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80&auto=format&fit=crop"
+                alt="Lirante – Food Delivery App" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Lirante project">↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Lirante</h3>
+              <p class="project-sub">Food Delivery Solution</p>
+              <div class="project-tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">Mobile App</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="landing" id="project-sugee">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=80&auto=format&fit=crop"
+                alt="Sugee – Loan Management" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Sugee project">↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Sugee</h3>
+              <p class="project-sub">Loan Management System</p>
+              <div class="project-tags">
+                <span class="tag">Landing Page</span>
+                <span class="tag">Dashboard</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="animation" id="project-cinetstox">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80&auto=format&fit=crop"
+                alt="Cinetstox – Entertainment Platform" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Cinetstox project">↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Cinetstox</h3>
+              <p class="project-sub">Entertainment Platform</p>
+              <div class="project-tags">
+                <span class="tag">Animation</span>
+                <span class="tag">UX Design</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="illustration" id="project-branding">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80&auto=format&fit=crop"
+                alt="Brand Identity Project" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Brand Identity project">↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Brand Identity</h3>
+              <p class="project-sub">Visual Identity System</p>
+              <div class="project-tags">
+                <span class="tag">Illustration</span>
+                <span class="tag">Branding</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="product" id="project-dashboard">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&auto=format&fit=crop"
+                alt="Analytics Dashboard" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Analytics Dashboard project">↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p class="project-sub">Data Visualisation Platform</p>
+              <div class="project-tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">Dashboard</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="guide" id="project-design-guide">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=600&q=80&auto=format&fit=crop"
+                alt="Design System Guide" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Design System project">↗</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Design System</h3>
+              <p class="project-sub">Component Library & Guide</p>
+              <div class="project-tags">
+                <span class="tag">Guide</span>
+                <span class="tag">Wireframe</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Dots pagination -->
+        <div class="portfolio-dots" aria-label="Portfolio pagination">
+          <span class="dot dot--active" id="dot-1"></span>
+          <span class="dot" id="dot-2"></span>
+          <span class="dot" id="dot-3"></span>
+          <span class="dot" id="dot-4"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ TESTIMONIALS ═══════════════════════════════════════════ -->
+    <section class="testimonials section-pad" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-label">Social Proof</div>
+        <h2 id="testimonials-heading" class="section-title">
+          Testimonials That <span class="brand-orange">Trust us</span>
+        </h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" id="testimonial-1">
+            <div class="testimonial-rating">★★★★★ <span class="rating-num">5.0</span></div>
+            <p class="testimonial-text">"Jenny transformed our vision into a stunning, intuitive product. Her ability to
+              understand users is unmatched. The final design exceeded every expectation."</p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&q=80&auto=format&fit=crop&crop=faces"
+                alt="Fawzi Sayed" class="author-avatar" loading="lazy" />
+              <div>
+                <p class="author-name">Fawzi Sayed</p>
+                <p class="author-role">UI/UX Designer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="testimonial-2">
+            <div class="testimonial-rating">★★★★★ <span class="rating-num">5.0</span></div>
+            <p class="testimonial-text">"Working with Jenny was a game-changer. Our app's usability score jumped by 45%
+              after her redesign. Absolutely recommend her to any team."</p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&q=80&auto=format&fit=crop&crop=faces"
+                alt="Priya Mehta" class="author-avatar" loading="lazy" />
+              <div>
+                <p class="author-name">Priya Mehta</p>
+                <p class="author-role">Product Manager, Cognizant</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--featured" id="testimonial-3">
+            <div class="testimonial-rating">★★★★★ <span class="rating-num">5.0</span></div>
+            <p class="testimonial-text">"Exceptional product design! Jenny delivered a world-class design system for our
+              platform. She's meticulous, creative, and a true partner."</p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&q=80&auto=format&fit=crop&crop=faces"
+                alt="Rahul Sharma" class="author-avatar" loading="lazy" />
+              <div>
+                <p class="author-name">Rahul Sharma</p>
+                <p class="author-role">CTO, Cinetstox</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="trust-badges">
+          <div class="trust-badge" id="badge-rating">
+            <span class="badge-num">4.9/5</span>
+            <span class="badge-label">Average Ratings</span>
+          </div>
+          <div class="trust-badge" id="badge-awards">
+            <span class="badge-num">25+</span>
+            <span class="badge-label">Winning Awards</span>
+          </div>
+          <div class="trust-badge" id="badge-certified">
+            <span class="badge-num">✓</span>
+            <span class="badge-label">Certified Product Designer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ BLOG ═══════════════════════════════════════════ -->
+    <section class="blog section-pad" id="blog" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="section-label">Latest Writings</div>
+        <h2 id="blog-heading" class="section-title">From my <span class="brand-orange">Blog Post</span></h2>
+
+        <div class="blog-grid">
+          <article class="blog-card" id="blog-1">
+            <div class="blog-img-wrap">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&q=80&auto=format&fit=crop"
+                alt="Design Unraveled article" class="blog-img" loading="lazy" />
+              <span class="blog-category">UX Design</span>
+            </div>
+            <div class="blog-body">
+              <p class="blog-date">March 12, 2024</p>
+              <h3 class="blog-title">Design Unraveled: The Story Behind Great UX</h3>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" id="blog-2">
+            <div class="blog-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&q=80&auto=format&fit=crop"
+                alt="Sugee blog post" class="blog-img" loading="lazy" />
+              <span class="blog-category">Case Study</span>
+            </div>
+            <div class="blog-body">
+              <p class="blog-date">January 5, 2024</p>
+              <h3 class="blog-title">Sugee: Designing a Loan Management System</h3>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" id="blog-3">
+            <div class="blog-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=500&q=80&auto=format&fit=crop"
+                alt="Design systems blog post" class="blog-img" loading="lazy" />
+              <span class="blog-category">Product Design</span>
+            </div>
+            <div class="blog-body">
+              <p class="blog-date">November 20, 2023</p>
+              <h3 class="blog-title">Building Scalable Design Systems from Scratch</h3>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CONTACT ═══════════════════════════════════════════ -->
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-layout">
+        <div class="contact-left">
+          <div class="section-label">Get in Touch</div>
+          <h2 id="contact-heading" class="section-title">Let's <span class="brand-orange">Connect</span><br />& Work
+            Together</h2>
+          <p class="contact-para">Have a project in mind? Drop me a message and let's build something incredible
+            together.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <a href="mailto:jenny@jcrea.design">jenny@jcrea.design</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Mumbai, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Project Brief" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="contact-submit">Send Message ✉️</button>
+          <p class="form-success" id="form-success" hidden>✓ Message sent! I'll get back to you shortly.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ NEWSLETTER TICKER ═══════════════════════════════════════════ -->
+    <div class="newsletter-bar">
+      <div class="container newsletter-inner">
+        <p class="newsletter-text">Get the latest updates straight to your inbox</p>
+        <div class="newsletter-form-wrap" role="search">
+          <input type="email" id="newsletter-email" placeholder="Enter Email Address"
+            aria-label="Email for newsletter" />
+          <button type="button" class="btn btn-primary newsletter-btn" id="newsletter-send">Send</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
+  <footer class="footer" id="footer" aria-label="Site footer">
+    <div class="footer-hire-bar">
+      <p class="footer-hire-text">Let's Connect there</p>
+      <a href="#contact" class="btn btn-primary footer-hire-btn" id="footer-hire-btn">Hire me</a>
+    </div>
+
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="nav-logo-circle footer-logo-circle">
+            <span class="nav-logo-text">JC</span>
+          </div>
+          <span class="footer-logo-name">JCREA</span>
+        </div>
+        <p class="footer-bio">Award-winning Product Designer with 10 years of experience creating exceptional digital
+          experiences that users love.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="YouTube" id="social-youtube">▶</a>
+          <a href="#" class="social-icon" aria-label="WhatsApp" id="social-whatsapp">💬</a>
+          <a href="#" class="social-icon" aria-label="Instagram" id="social-instagram">📸</a>
+          <a href="#" class="social-icon" aria-label="Twitter" id="social-twitter">🐦</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:jenny@jcrea.design">jenny@jcrea.design</a></li>
+          <li><span>Mumbai, Maharashtra</span></li>
+          <li><span>India – 400001</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Newsletter</h4>
+        <p class="footer-newsletter-text">Get the latest design insights delivered to your inbox.</p>
+        <div class="footer-newsletter-form">
+          <input type="email" id="footer-newsletter-email" placeholder="Your email"
+            aria-label="Footer newsletter email" />
+          <button type="button" class="footer-newsletter-btn" id="footer-newsletter-btn"
+            aria-label="Subscribe">→</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 JCREA – Jenny Portfolio. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">User Terms &amp; Conditions</a>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
