@@ -1,7 +1,7 @@
 /* ══════════════════════════════════════════════════════════════
    JENNY JCREA — Personal Portfolio Stylesheet
    ══════════════════════════════════════════════════════════════ */
-
+/*making consistency*/
 /* ─── CSS Custom Properties ─── */
 :root {
   --clr-orange: #F4813F;
@@ -681,90 +681,220 @@ ul {
 }
 
 /* ══════════════════════════════════════════════════════════════
-   SERVICES
+   SERVICES (Dark Carousel Style)
    ══════════════════════════════════════════════════════════════ */
 .services {
   background: var(--clr-bg-2);
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.services-wrapper {
+  background: linear-gradient(145deg, #181818, #0a0a0a);
+  border-radius: 40px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
 
-.service-card {
-  background: var(--clr-bg);
-  border-radius: var(--radius-lg);
-  padding: 36px 28px;
-  border: 1px solid var(--clr-border);
-  transition: var(--transition);
+/* Abstract Orange Blobs in background */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.blob-1 {
+  background: var(--clr-orange);
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+}
+
+.blob-2 {
+  background: rgba(244, 129, 63, 0.7);
+  width: 500px;
+  height: 500px;
+  bottom: -150px;
+  left: -100px;
+}
+
+/* Header Layout */
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
   position: relative;
+  z-index: 10;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.services-desc {
+  max-width: 400px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: right;
+}
+
+/* Carousel Track */
+.services-carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  /* Hide scrollbar Firefox */
+  position: relative;
+  z-index: 10;
+}
+
+.services-carousel::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar Chrome/Safari */
+}
+
+/* Individual Card */
+.service-slide {
+  flex: 0 0 320px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  transition: transform 0.3s ease;
+}
+
+.service-slide:hover {
+  transform: translateY(-8px);
+}
+
+/* Top Section (Titles) */
+.slide-top {
+  padding: 32px 24px;
+  border-radius: 24px 24px 0 0;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.slide-top h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: none;
+}
+
+.solid-orange {
+  background: var(--clr-orange);
+  border: 1px solid var(--clr-orange);
+  border-bottom: none;
+}
+
+/* Bottom Section (Images) */
+.slide-bottom {
+  position: relative;
+  height: 280px;
+  border-radius: 0 0 24px 24px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
-.service-card::before {
-  content: '';
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: none;
+}
+
+.solid-white {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-top: none;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  max-height: 400px;
+  /* Safety constraint */
+}
+
+/* Arrow Buttons */
+.slide-btn {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, var(--clr-orange) 0%, var(--clr-orange-dark) 100%);
-  opacity: 0;
-  transition: var(--transition);
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: var(--shadow-sm);
 }
 
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-  border-color: transparent;
+.slide-btn:hover {
+  transform: scale(1.1) rotate(15deg);
 }
 
-.service-card:hover::before {
-  opacity: 1;
+.btn-dark {
+  background: #1A202C;
+  color: #fff;
 }
 
-.service-card:hover .service-icon,
-.service-card:hover h3,
-.service-card:hover p {
+.btn-orange {
+  background: var(--clr-orange);
+  color: #fff;
+}
+
+/* Pagination Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
   position: relative;
-  z-index: 2;
-  color: #fff;
+  z-index: 10;
 }
 
-.service-card--featured {
-  background: var(--clr-dark);
-  border-color: transparent;
+.dot-circle {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.service-card--featured .service-icon,
-.service-card--featured h3,
-.service-card--featured p {
-  color: #fff;
-}
-
-.service-card--featured::before {
-  background: linear-gradient(135deg, var(--clr-orange) 0%, #ff6b00 100%);
-}
-
-.service-icon {
-  font-size: 2.2rem;
-  margin-bottom: 18px;
-  display: block;
-  transition: var(--transition);
-}
-
-.service-card h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--clr-dark);
-  margin-bottom: 10px;
-  transition: var(--transition);
-}
-
-.service-card p {
-  font-size: 0.9rem;
-  color: var(--clr-text-light);
-  line-height: 1.6;
-  transition: var(--transition);
+.dot-pill.active {
+  width: 30px;
+  height: 10px;
+  background: var(--clr-orange);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -1839,8 +1969,20 @@ ul {
     margin-bottom: 36px;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
+  /* Add inside @media (max-width: 768px) */
+  .services-wrapper {
+    padding: 40px 20px;
+    border-radius: 24px;
+  }
+
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .services-desc {
+    text-align: left;
   }
 
   /* Timeline */
