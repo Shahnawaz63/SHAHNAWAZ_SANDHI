@@ -31,6 +31,26 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --clr-orange: #F4813F;
+  --clr-orange-light: #2A2A2A;
+  --clr-orange-dark: #D96A2A;
+  --clr-dark: #F8F8F8;
+  --clr-dark-2: #E8E8E8;
+  --clr-dark-3: #CCCCCC;
+  --clr-text: #F8F8F8;
+  --clr-text-light: #CCCCCC;
+  --clr-bg: #1A1A1A;
+  --clr-bg-2: #222222;
+  --clr-bg-3: #333333;
+  --clr-border: #444444;
+
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
 /* ─── Reset & Base ─── */
 *,
 *::before,
@@ -304,6 +324,9 @@ ul {
 .navbar {
   width: 100%;
   max-width: 860px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-pill {
@@ -356,6 +379,28 @@ ul {
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.04em;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: var(--clr-dark);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-md);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.theme-toggle:hover {
+  background: var(--clr-dark-2);
+  transform: scale(1.05);
+}
+
+.theme-toggle .theme-icon {
+  transition: var(--transition);
 }
 
 .nav-brand {
