@@ -231,14 +231,33 @@
     }, { threshold: 0.5 });
 
     statsObs.observe(heroStats);
+  }
+
+})();
+
+// 1. Grab all the buttons inside our container
+const buttons = document.querySelectorAll('.hero-cta .btn');
+
+// 2. Loop through each button and listen for a click
+buttons.forEach(button => {
+  button.addEventListener('click', function () {
+
+    // 3. First, remove the 'active' class from ALL buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // 4. Then, add the 'active' class ONLY to the button that was just clicked
+    this.classList.add('active');
+  });
+});
+
   // ───────────────────────────────
   // Dark Mode Toggle
   // ───────────────────────────────
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = themeToggle.querySelector('.theme-icon');
 
-  // Check for saved theme preference or default to light mode
-  const currentTheme = localStorage.getItem('theme') || 'light';
+  // Set dark theme as default
+  const currentTheme = localStorage.getItem('theme') || 'dark';
   document.documentElement.setAttribute('data-theme', currentTheme);
   updateThemeIcon(currentTheme);
 
@@ -260,21 +279,3 @@
       document.body.style.transition = '';
     }, 300);
   });
-
-})();
-
-
-// 1. Grab all the buttons inside our container
-const buttons = document.querySelectorAll('.hero-cta .btn');
-
-// 2. Loop through each button and listen for a click
-buttons.forEach(button => {
-  button.addEventListener('click', function () {
-
-    // 3. First, remove the 'active' class from ALL buttons
-    buttons.forEach(btn => btn.classList.remove('active'));
-
-    // 4. Then, add the 'active' class ONLY to the button that was just clicked
-    this.classList.add('active');
-  });
-});

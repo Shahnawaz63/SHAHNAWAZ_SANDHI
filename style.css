@@ -381,34 +381,6 @@ ul {
   letter-spacing: 0.04em;
 }
 
-/* Theme Toggle */
-.theme-toggle {
-  background: var(--clr-dark);
-  border: none;
-  border-radius: var(--radius-pill);
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: var(--transition);
-  box-shadow: var(--shadow-md);
-  color: #fff;
-  font-size: 1.2rem;
-}
-
-.theme-toggle:hover {
-  background: var(--clr-dark-2);
-  transform: scale(1.05);
-}
-
-.theme-toggle .theme-icon {
-  transition: var(--transition);
-}
-
-.nav-brand {
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
 
 /* ══════════════════════════════════════════════════════════════
    HERO
