@@ -4,24 +4,24 @@
 /*making consistency*/
 /* ─── CSS Custom Properties ─── */
 :root {
-  --clr-orange: #F4813F;
-  --clr-orange-light: #FFF0E8;
+   --clr-orange: #F4813F;
+  --clr-orange-light: #2A2A2A;
   --clr-orange-dark: #D96A2A;
-  --clr-dark: #1A1A1A;
-  --clr-dark-2: #222222;
-  --clr-dark-3: #333333;
-  --clr-text: #4a4a4a;
-  --clr-text-light: #777777;
-  --clr-bg: #F8F8F8;
-  --clr-bg-2: #ffffff;
-  --clr-bg-3: #F2F2F2;
-  --clr-border: #E8E8E8;
+  --clr-dark: #F8F8F8;
+  --clr-dark-2: #E8E8E8;
+  --clr-dark-3: #CCCCCC;
+  --clr-text: #F8F8F8;
+  --clr-text-light: #CCCCCC;
+  --clr-bg: #1A1A1A;
+  --clr-bg-2: #222222;
+  --clr-bg-3: #333333;
+  --clr-border: #444444;
+
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
 
   --font-base: 'Inter', sans-serif;
-
-  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.07);
-  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.10);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.14);
 
   --radius-sm: 8px;
   --radius-md: 16px;
@@ -238,7 +238,8 @@ ul {
 }
 
 .btn-outline-dark:hover {
-  background: var(--clr-dark);
+  background: transparent;
+   backdrop-filter: blur(12px);
   color: #fff;
   transform: translateY(-2px);
 }
@@ -324,7 +325,7 @@ ul {
 .navbar {
   width: 100%;
   max-width: 860px;
-  display: flex;
+  
   align-items: center;
   justify-content: space-between;
 }
@@ -333,7 +334,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--clr-dark);
+  background: transparent;
+   backdrop-filter: blur(5px);
   border-radius: var(--radius-pill);
   padding: 8px 12px;
   gap: 4px;
@@ -607,7 +609,7 @@ ul {
 /* Stats bar with curved dark top */
 .hero-stats {
   width: 100%;
-  background: var(--clr-dark);
+  background: var(--clr-bg-3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -841,11 +843,11 @@ ul {
   border-top: none;
 }
 
-.solid-white {
+/*.solid-white {
   background: #ffffff;
   border: 1px solid #ffffff;
   border-top: none;
-}
+}*/
 
 .slide-img {
   width: 100%;
@@ -1268,7 +1270,7 @@ ul {
    TESTIMONIALS
    ══════════════════════════════════════════════════════════════ */
 .testimonials {
-  background: var(--clr-dark);
+  background: var(--clr-bg);
 }
 
 .testimonials .section-label {
@@ -1628,7 +1630,7 @@ ul {
    FOOTER
    ══════════════════════════════════════════════════════════════ */
 .footer {
-  background: var(--clr-dark-2);
+  background: var(--clr-bg);
 }
 
 .footer-hire-bar {
